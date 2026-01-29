@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoboLearn - Robotics Training Portal</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/views.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="root">
+        <header id="main-header" class="glass-header">
+            <div class="container header-content">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">RoboLearn</span>
+                </a>
+                <nav id="main-nav">
+                    <!-- Nav items injected by auth state -->
+                </nav>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">🌙</button>
+                    <div id="auth-actions">
+                        <!-- Login/Signup or Profile injected here -->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="app">
+            <!-- Dynamic Content Loaded Here -->
+            <div class="loader-container">
+                <div class="loader"></div>
+            </div>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <p>&copy; 2026 RoboLearn. Empowering future roboticists.</p>
+            </div>
+        </footer>
+    </div>
+    <script type="module" src="scripts/app.js"></script>
+</body>
+</html>
